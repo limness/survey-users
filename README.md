@@ -39,7 +39,7 @@ Response body:
       {
           "id": 2,
           "poll_name": "Что такое ИИ",
-          "description": "sfs",
+          "description": "Основные понятия и методы проектирования",
           "questions": [
               {
                   "id": 36,
