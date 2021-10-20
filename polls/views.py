@@ -15,7 +15,7 @@ import urllib.request
 class PollsManager(APIView):
     """ Processor of all requests from the client by API """
 
-    # curl --location --request GET 'http://localhost:8000/api/active_polls/'
+    # curl -G "http://localhost:8000/api/active_polls/"
     def get(self, request, *args, **kwargs):
         polls = Poll.objects.all()
         if len(polls) > 0:
@@ -31,7 +31,7 @@ class PollsManager(APIView):
 class AnswersList(APIView):
     """ User answer handler """
 
-    # curl --location --request GET 'http://localhost:8000/api/answers_polls/'
+    # curl -G "http://localhost:8000/api/active_polls/" -d "user_id=347"
     def get(self, request, *args, **kwargs):
         user_id = request.data.get('user_id')
         answers = PollAnswer.objects.filter(user_id=user_id)
@@ -47,7 +47,7 @@ class AnswersList(APIView):
 class AnswerCreater(APIView):
     """ User answer handler """
 
-    # curl --location --request POST 'http://localhost:8000/api/active_polls/{id}/'
+    # curl "http://localhost:8000/api/add_answer/" -d "user_id=347&question_id=32&answer_id=1&answer_text='pananie'"
     def post(self, request, *args, **kwargs):
         question_id = request.data.get('question_id')
         user_id = request.data.get('user_id')

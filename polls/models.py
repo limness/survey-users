@@ -11,6 +11,11 @@ class Poll(models.Model):
     def __str__(self):
        return str(self.poll_name)
 
+    class Meta:
+        permissions = (
+            ('readonly_poll','Readonly Poll'),
+        )
+
 class PollQuestion(models.Model):
     """Poll questions"""
 

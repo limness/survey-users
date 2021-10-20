@@ -4,7 +4,6 @@ from .models import Poll, PollAnswer, PollQuestion
 
 
 class PollQuestionSerializer(serializers.ModelSerializer):
-    #poll_detail = PollSerializer(source='poll', read_only=True)
     question_type = serializers.CharField(max_length=30, default='own_asnwer')
     question_text = serializers.CharField(max_length=250)
 
