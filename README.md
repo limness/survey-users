@@ -4,9 +4,9 @@
 
 ### API Resources
 
-  - [GET /api/active_polls/](#get-magazines)
-  - [GET /api/answers_polls/](#get-magazinesid)
-  - [POST /add_answer/](#post-magazinesidarticles)
+  - [GET /api/active_polls/](#get-active-polls)
+  - [GET /api/answers_polls/](#get-answers-polls)
+  - [POST /add_answer/](#post-add-answer)
 
 ### GET /api/active_polls/
 
