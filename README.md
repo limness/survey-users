@@ -17,19 +17,19 @@ Response body:
     [
       {
           "id": 1,
-          "poll_name": "SpaceX или BlueOrigin",
+          "poll_name": "SpaceX и BlueOrigin",
           "description": "Выбираем лучшую космическую корпорацию",
           "questions": [
               {
                   "id": 31,
-                  "question_type": "2345",
-                  "question_text": "Smth",
+                  "question_type": "own_asnwer",
+                  "question_text": "В каком году был запущен SN10?",
                   "poll": 1
               },
               {
                   "id": 32,
                   "question_type": "own_asnwer",
-                  "question_text": "fgsgeesgseg",
+                  "question_text": "Starlink это...",
                   "poll": 1
               }
           ],
@@ -38,19 +38,19 @@ Response body:
       },
       {
           "id": 2,
-          "poll_name": "Pre and Fa",
+          "poll_name": "Что такое ИИ",
           "description": "sfs",
           "questions": [
               {
                   "id": 36,
-                  "question_type": "235",
-                  "question_text": "Smth",
+                  "question_type": "own_asnwer",
+                  "question_text": "Перцептрон это...",
                   "poll": 2
               },
               {
                   "id": 37,
-                  "question_type": "235",
-                  "question_text": "Smth",
+                  "question_type": "own_asnwer",
+                  "question_text": "Для чего служит тензор?",
                   "poll": 2
               }
           ],
@@ -70,11 +70,11 @@ Response body:
             "id": 40,
             "user_id": 347,
             "answer_id": "1",
-            "answer_text": "panimanie",
+            "answer_text": "Спутниковая система интернета",
             "question_detail": {
                 "id": 32,
                 "question_type": "own_asnwer",
-                "question_text": "fgsgeesgseg",
+                "question_text": "Starlink это...",
                 "poll": 1
             },
             "question_poll": 32
@@ -83,11 +83,11 @@ Response body:
             "id": 41,
             "user_id": 347,
             "answer_id": "1",
-            "answer_text": "panimanie",
+            "answer_text": "Что-то иное..",
             "question_detail": {
                 "id": 32,
                 "question_type": "own_asnwer",
-                "question_text": "fgsgeesgseg",
+                "question_text": "Starlink это...",
                 "poll": 1
             },
             "question_poll": 32
@@ -107,11 +107,11 @@ Request body:
             "id": 45,
             "user_id": 347,
             "answer_id": "1",
-            "answer_text": "panimanie",
+            "answer_text": "2020",
             "question_detail": {
-                "id": 32,
+                "id": 31,
                 "question_type": "own_asnwer",
-                "question_text": "fgsgeesgseg",
+                "question_text": "В каком году был запущен SN10?",
                 "poll": 1
             },
             "question_poll": 32
